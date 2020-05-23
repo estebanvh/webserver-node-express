@@ -17,17 +17,14 @@ app.set('view engine', 'hbs');
 app.get('/', (req, res) => {
 
     res.render('home', {
-        nombre: 'esteban villarroel henRíquez',
-        anio: new Date().getFullYear()
+        nombre: 'esteban villarroel henRíquez'
     })
 
 });
 
 app.get('/about', (req, res) => {
 
-    res.render('about', {
-        anio: new Date().getFullYear()
-    });
+    res.render('about');
 
 })
 
