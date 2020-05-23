@@ -6,7 +6,7 @@ require('./hbs/helpers');
 
 
 //para heroku
-const port = process.env.Port || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -35,5 +35,5 @@ app.get('/data', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Escuchando peticiones en el puerto ", port);
+    console.log(`Escuchando peticiones en el puerto ${port}`);
 });
